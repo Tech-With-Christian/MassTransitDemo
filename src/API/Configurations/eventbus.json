@@ -1,0 +1,9 @@
+{
+  "EventBusSettings": {
+    "Host": "localhost",
+    "Post": 5672,
+    "UserName": "guest",
+    "Password": "guest",
+    "VirtualHost": "/"
+  }
+}

@@ -11,7 +11,11 @@
 
                 config.AddJsonFile($"{configurationsDirectory}/appsettings.json", optional: false, reloadOnChange: true)
                         .AddJsonFile($"{configurationsDirectory}/appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
-                        .AddEnvironmentVariables();
+
+                config.AddJsonFile($"{configurationsDirectory}/eventbus.json", optional: false, reloadOnChange: true)
+                        .AddJsonFile($"{configurationsDirectory}/eventbus.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+
+                .AddEnvironmentVariables();
             });
             return api;
         }

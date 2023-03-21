@@ -1,6 +1,7 @@
 ﻿using Data;
 using Infrastructure.Middleware;
 using Infrastructure.Services;
+using Infrastructure.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +14,7 @@ namespace Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             Log.Information("Adding Infrastructure services");
+            services.AddSettings(configuration);
             services.AddServices();
             services.AddDatabase();
             return services;
