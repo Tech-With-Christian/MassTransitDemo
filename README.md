@@ -2,11 +2,11 @@
   <br>
   <a href="https://christian-schou.dk"><img src="https://github.com/Tech-With-Christian/Dotnet-Demo-CRUD-Api/blob/main/assets/img/cs-logo-polygon.png" alt="Christian Schou Logo" width="200"></a>
   <br>
-  .NET CRUD API
+  MassTransit .NET Demo
   <br>
 </h1>
 
-<h4 align="center">This is a simple CRUD API for use in my <a href="https://blog.christian-schou.dk" target="_blank">tutorials</a>. It contains a simple implementation of a CRUD service for products, that can easily be extended.</h4>
+<h4 align="center">This is a demonstration of how easy it is to implement MassTransit in a simple .NET CRUD API. You can read the <a href="https://blog.christian-schou.dk" target="_blank">full tutorial here</a>. It contains a simple implementation of MassTransit with communication to RabbitMQ on a CRUD service for products, that can easily be extended. The service will create new products in the database using a publisher and consumer.</h4>
 
 
 <p align="center">
@@ -24,6 +24,8 @@
 
 ## Key Features
 
+* MassTransit for easily building a reliable distributed application
+  - Choose your own connector: RabbitMq, Azure Service Bus, Amazon SQS or In-Memory.
 * Simple CRUD implementation
   - Super simple CRUD service implementation that can easily be extended.
 * Error Handler Middleware
@@ -41,10 +43,10 @@ To clone and run this simple .NET Web API, you'll need [Git](https://git-scm.com
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Tech-With-Christian/Dotnet-CRUD-Api.git
+$ git clone https://github.com/Tech-With-Christian/MassTransitDemo.git
 
 # Go into the repository
-$ cd dotnet-crud-api
+$ cd masstransitdemo
 
 # Restore dependencies
 $ dotnet restore
@@ -55,12 +57,14 @@ $ dotnet watch
 
 ## Download
 
-You can [download](https://github.com/Tech-With-Christian/Dotnet-CRUD-Api/archive/refs/heads/main.zip) the latest main version of this .NET CRUD API Demo for further development on Windows, macOS and Linux.
+You can [download](https://github.com/Tech-With-Christian/MassTransitDemo/archive/refs/heads/main.zip) the latest main version of this MassTransit .NET CRUD API Demo for further development on Windows, macOS and Linux.
 
 ## Credits
 
 This software uses the following open source packages:
 
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [MassTransit](https://masstransit.io/)
 - [AutoMapper](https://github.com/AutoMapper/AutoMapper)
 - [.NET Core](https://github.com/dotnet/core)
 - [MediatR](https://github.com/jbogard/MediatR)
@@ -75,4 +79,3 @@ MIT
 > [christian-schou.dk](https://christian-schou.dk) &nbsp;&middot;&nbsp;
 > GitHub [@Christian-Schou](https://github.com/Christian-Schou) &nbsp;&middot;&nbsp;
 > Blog [blog.christian-schou.dk](https://blog.christian-schou.dk)
-
