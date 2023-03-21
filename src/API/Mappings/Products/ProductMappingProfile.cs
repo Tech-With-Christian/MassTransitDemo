@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Entitites.Products;
 using DTO.Products;
+using MessageBus.Messages.Products;
 
 namespace API.Mappings.Products
 {
@@ -11,6 +12,8 @@ namespace API.Mappings.Products
             #region Create
 
             CreateMap<ProductCreateRequestDto, Product>().ReverseMap();
+
+            CreateMap<ProductCreatedEvent, Product>().ReverseMap();
 
             #endregion Create
 
@@ -35,7 +38,5 @@ namespace API.Mappings.Products
 
             #endregion Update
         }
-
-
     }
 }
