@@ -10,7 +10,7 @@
                 IHostEnvironment? env = context.HostingEnvironment;
 
                 config.AddJsonFile($"{configurationsDirectory}/appsettings.json", optional: false, reloadOnChange: true)
-                        .AddJsonFile($"{configurationsDirectory}/appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                        .AddJsonFile($"{configurationsDirectory}/appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
                 config.AddJsonFile($"{configurationsDirectory}/eventbus.json", optional: false, reloadOnChange: true)
                         .AddJsonFile($"{configurationsDirectory}/eventbus.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
