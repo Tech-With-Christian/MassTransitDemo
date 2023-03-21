@@ -1,6 +1,7 @@
 ﻿using Data;
 using Infrastructure.Middleware;
 using Infrastructure.Services;
+using Infrastructure.Services.Events;
 using Infrastructure.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -17,6 +18,7 @@ namespace Infrastructure
             services.AddSettings(configuration);
             services.AddServices();
             services.AddDatabase();
+            services.AddEventBusService(configuration);
             return services;
         }
 
