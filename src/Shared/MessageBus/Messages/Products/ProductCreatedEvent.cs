@@ -8,12 +8,12 @@
         /// <summary>
         /// Product Name
         /// </summary>
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Product Description
         /// </summary>
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Product Price
