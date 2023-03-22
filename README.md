@@ -10,7 +10,7 @@
 
 
 <p align="center">
-<a href="https://blog.christian-schou.dk/how-to-use-masstransit-with-rabbitmq"><img src="https://github.com/Tech-With-Christian/Dotnet-CRUD-Api/blob/main/assets/img/github-masstransit-cover-image.png" alt="Featured Image .NET MassTransit CRUD API" width="90%"></a>
+<a href="https://blog.christian-schou.dk/how-to-use-masstransit-with-rabbitmq"><img src="https://github.com/Tech-With-Christian/MassTransitDemo/blob/main/assets/img/github-masstransit-cover-image.png" alt="Featured Image .NET MassTransit CRUD API" width="90%"></a>
 </p>
 
 <p align="center">
