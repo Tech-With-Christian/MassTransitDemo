@@ -6,11 +6,11 @@
   <br>
 </h1>
 
-<h4 align="center">This is a demonstration of how easy it is to implement MassTransit in a simple .NET CRUD API. You can read the <a href="https://blog.christian-schou.dk" target="_blank">full tutorial here</a>. It contains a simple implementation of MassTransit with communication to RabbitMQ on a CRUD service for products, that can easily be extended. The service will create new products in the database using a publisher and consumer.</h4>
+<h4 align="center">This is a demonstration of how easy it is to implement MassTransit in a simple .NET CRUD API. You can read the <a href="https://blog.christian-schou.dk/how-to-use-masstransit-with-rabbitmq" target="_blank">full tutorial here</a>. It contains a simple implementation of MassTransit with communication to RabbitMQ on a CRUD service for products, that can easily be extended. The service will create new products in the database using a publisher and consumer.</h4>
 
 
 <p align="center">
-<a href="https://christian-schou.dk"><img src="https://github.com/Tech-With-Christian/Dotnet-CRUD-Api/blob/main/assets/img/dotnet-crud-api.png" alt="Featured Image .NET CRUD API" width="90%"></a>
+<a href="https://blog.christian-schou.dk/how-to-use-masstransit-with-rabbitmq"><img src="https://github.com/Tech-With-Christian/Dotnet-CRUD-Api/blob/main/assets/img/github-masstransit-cover-image.png" alt="Featured Image .NET MassTransit CRUD API" width="90%"></a>
 </p>
 
 <p align="center">
