@@ -1,9 +1,15 @@
 {
   "EventBusSettings": {
-    "Host": "localhost",
-    "Post": 5672,
-    "UserName": "guest",
-    "Password": "guest",
-    "VirtualHost": "/"
+    "ServiceBusProvider": "rabbitmq", // or azure
+    "AzureServiceBusSettings": {
+      "ConnectionString": "your-connection-string-here"
+    },
+    "RabbitmqSettings": {
+      "Host": "localhost",
+      "Post": 5672,
+      "UserName": "guest",
+      "Password": "guest",
+      "VirtualHost": "/"
+    }
   }
 }

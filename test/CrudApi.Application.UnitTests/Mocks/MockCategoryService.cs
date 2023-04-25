@@ -34,16 +34,15 @@ namespace CrudApi.Application.UnitTests.Mocks
             // Setup method to test Get Categories (The get all service)
             mockCategoryService.Setup(s => s.GetCategoriesAsync(CancellationToken.None)).ReturnsAsync(categories);
 
+            // Configuration of what happens when we call the Create new Category method
+            mockCategoryService.Setup(s => s.CreateCategoryAsync(It.IsAny<Category>(), CancellationToken.None)).ReturnsAsync((Category category, CancellationToken ct) =>
+            {
+                categories.Add(category);
+                return category;
+            });
+
             // Return the mocked service for categories
             return mockCategoryService;
         }
     }
 }
-
-
-// Configuration of what happens when we call the Create new Category method
-//mockCategoryService.Setup(s => s.CreateCategoryAsync(It.IsAny<Category>(), CancellationToken.None)).ReturnsAsync((Category category) =>
-//{
-//    categories.Add(category);
-//    return category;
-//});
